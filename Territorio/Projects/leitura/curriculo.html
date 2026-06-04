@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcelo Augusto - Currículo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+      font-size: 13px;
+    }
+
+    .container {
+      max-width: 210mm;
+      margin: 30px auto;
+      background: white;
+      display: flex;
+      min-height: 297mm;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      width: 35%;
+      background: #1e2a38;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile-section {
+      padding: 22px 12px;
+      text-align: center;
+      background: #16202a;
+    }
+
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-image: url('/home/nextlevelcode/Pictures/Untitled.jpg');
+      background-size: cover;
+      background-position: center;
+      border: 3px solid white;
+      margin: 0 auto 20px;
+    }
+
+    .profile-name {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .profile-title {
+      font-size: 13px;
+      color: #bdc3c7;
+    }
+
+    .sidebar-section {
+      padding: 20px;
+      border-top: 1px solid #2f3e50;
+    }
+
+    .sidebar-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .contact-item,
+    .language-item,
+    .skill-item {
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+
+    .contact-item a {
+      color: white;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .tools-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .tools-list li {
+      margin-bottom: 4px;
+      font-size: 12px;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .section {
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    .resume-text {
+      text-align: justify;
+      font-size: 13px;
+      color: #444;
+    }
+
+    .education-item,
+    .project {
+      margin-bottom: 22px;
+    }
+
+    .header-style {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .education-title {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .education-institution {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .date-style {
+      font-size: 11px;
+      color: #999;
+      font-weight: bold;
+    }
+
+    .education-description ul {
+      margin-top: 6px;
+      padding-left: 20px;
+    }
+
+    .education-description li {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .project-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .project-description,
+    .stack-item,
+    .features-list li {
+      font-size: 12px;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    .stack-title,
+    .features-title {
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .features-list {
+      padding-left: 20px;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .container {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="profile-section">
+        <div class="profile-photo"></div>
+        <h1 class="profile-name">Marcelo Augusto</h1>
+        <p class="profile-title">Desenvolvedor de Software</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Contato</h3>
+        <div class="contact-item">
+          <a href="mailto:marceloaugustomoura@proton.me">marceloaugustomoura@proton.me</a>
+        </div>
+        <div class="contact-item">86 99406-4881</div>
+        <div class="contact-item">
+          <a href="https://nextlevelcodeblog-front.vercel.app" target="_blank">NextLevelCode-Blog</a>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/nextlevelcode014" target="_blank">github.com/nextlevelcode014</a>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Linguagens & Plataformas</h3>
+        <div class="skill-item">JavaScript / TypeScript</div>
+        <div class="skill-item">Node.js / Bun</div>
+        <div class="skill-item">Rust</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">C</div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Frameworks & Libs</h3>
+        <div class="skill-item">Axum</div>
+        <div class="skill-item">React / Next.js</div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Ferramentas & DevOps</h3>
+        <ul class="tools-list">
+          <li>Docker / Docker Compose</li>
+          <li>Git / GitHub / Actions</li>
+          <li>Linux</li>
+          <li>PostgreSQL / MySQL / MongoDB</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Idiomas</h3>
+        <div class="language-item">Português - Nativo</div>
+        <div class="language-item">Inglês - Listening/Reading: C1 <br> Writing/Speaking: B2-B1</div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="section">
+        <h2 class="section-title">Formação Acadêmica</h2>
+
+        <div class="education-item">
+          <div class="header-style">
+            <div>
+              <div class="education-title">Ciência da Computação</div>
+              <div class="education-institution">Estacio - Teresina</div>
+            </div>
+            <div class="date-style">2025 - atual</div>
+          </div>
+          <div class="education-description">
+              <p>Pensamento computacional com C, algoritmos e estruturas de dados, redes, banco de dados, matemática e lógica, segurança da informação</p>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="header-style">
+            <div>
+              <div class="education-title">Ensino Médio - Técnico em Informática</div>
+              <div class="education-institution">Ceti Ferdinand Freitas - José de Freitas</div>
+            </div>
+            <div class="date-style">2020 - 2023</div>
+          </div>
+          <div class="education-description">
+              <p>HTML, CSS, JavaScript. Instalação e suporte a SOs. Desenvolvimento com Python e Java. Rede de computadores. Hardware na prática</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Projetos Desenvolvidos</h2>
+
+        <div class="project">
+          <div class="header-style">
+
+          <div class="project-title">NextLevelCode - Blog</div>
+          <div class="date-style">11/11/2024 - 31/07/2025</div>
+          </div>
+          <div class="project-description">
+            Blog pessoal para divulgar estudos e ideias, melhorar escrita e fixar conceitos.
+          </div>
+          <div class="stack-title">Stack Tecnológica:</div>
+
+          <ul class="features-list">
+          <li class="stack-item">Frontend: Next.js com TypeScript</li>
+          <li class="stack-item">Backend: Rust com Axum</li>
+          <li class="stack-item">Banco: PostgreSQL</li>
+          <li class="stack-item">CAPTCHA: Google reCAPTCHA v3</li>
+          <li class="stack-item">CI/CD: GitHub Actions</li>
+          <li class="stack-item">Deploy: Docker + Compose</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="header-style">
+
+          <div class="project-title">Dir Sync</div>
+          <div class="date-style">01/05/2025 - 29/07/2025</div>
+          </div>
+          <div class="project-description">
+            Utilitário em C para sincronização de diretórios e monitoramento em tempo real.
+          </div>
+          <div class="features-title">Funcionalidades:</div>
+          <ul class="features-list">
+            <li>Monitoramento contínuo</li>
+            <li>Ignora arquivos temporários</li>
+            <li>Suporte a múltiplas instâncias</li>
+            <li>Compara diferença entre arquivos</li>
+          </ul>
+        </div>
+        <div class="project">
+          <div class="header-style">
+          <div class="project-title">My Arch Install</div>
+            <div class="date-style">28/11/2024 - 04/01/2025</div>
+          </div>
+          <div class="project-description">
+            Script de configuração dos passos iniciais para Instalação do Arch Linux.
+          </div>
+          <div class="features-title">Funcionalidades:</div>
+          <ul class="features-list">
+            <li>Configura a localização</li>
+            <li>Configura idioma e teclado</li>
+            <li>Configurações do usuário</li>
+            <li>Instala pacotes essenciais</li>
+          </ul>
+        </div>
+      <div class="project">
+          <div class="header-style">
+          <div class="project-title">TicTacToeAI</div>
+            <div class="date-style">05/06/2024 - 08/06/2024</div>
+          </div>
+          <div class="project-description">
+            Jogo da velha em C e C++, usando algoritmo minimax para a AI.
+          </div>
+          <div class="features-title">Descrição:</div>
+            <p class="resume-text">AI calcula todas as possibilidades de vitória e escolhe a melhor jogada baseada no score.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

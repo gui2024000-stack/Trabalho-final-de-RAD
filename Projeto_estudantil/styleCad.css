@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout vertical da página */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* centraliza o formulário verticalmente */
+    align-items: center;        /* centraliza horizontalmente */
+    min-height: 100vh;
+    background: #f2f2f2;
+    padding: 20px 0;
+}
+
+/* Formulário */
+form {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 350px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+/* Botão de submit */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Botão de mostrar/ocultar senha */
+button[type="button"] {
+    padding: 5px 10px;
+    background: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+button[type="button"]:hover {
+    background: #5a6268;
+}
+
+/* Mensagem de conexão */
+.mensagem-rodape {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeOut 1s ease-in-out 3s forwards; /* some depois de 3s */
+}
+
+/* Animação fade out */
+@keyframes fadeOut {
+    to { opacity: 0; }
+}

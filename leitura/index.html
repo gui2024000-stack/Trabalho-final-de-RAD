@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device width,initial-scale=1">
+        <title>Boletim interativo</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Boletim interativo</h1>
+            <p>Preencha os dados,lance as matérias e aprenda com as explicações a direita</p>
+        </header>
+    </body>
+    <main class="layout">
+        <section class="col-acao">
+            <article class="cartão">
+                <h2>Dados da turma</h2>
+                <form id="form-dados" class="grade-2"
+                data-help="Este formulário atualiza a identificação do boletim sem carregar a página">
+                <label>Nome do aluno
+                    <input id="aluno" type="text" required
+                    placeholder="Exemplo:Ana Sousa"
+                    data-help="Campo de texto livre para nome do aluno">
+                </label>
+                 <label>Nome do professor
+                    <input id="professor" type="text" required
+                    placeholder="Exemplo:Lucas Marques"
+                    data-help="Campo de texto livre para nome do professor">
+                </label>
+                 <label>Turma
+                    <input id="Turma" type="text"
+                    placeholder="Exemplo:2 ano B"
+                    data-help="Turma ou sala do aluno. Pode ficar vazio">
+                </label>
+                 <label>Ano letivo
+                    <input id="ano" type="number" min="2000" max="2100" value="2025"
+                    data-help="Número do ano letivo. O navegador bloqueia valores fora do intervalo">
+                </label>
+                <button type="submit" data-help="Aplica os dados no cabeçalho do boletim">Aplicar dados</button>
+        </form>
+            </article>
+        </section>
+    </main>
+</html>
